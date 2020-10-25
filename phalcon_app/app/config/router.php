@@ -10,6 +10,11 @@ $router->addGet('/homepage', [
 	'action' => 'index'
 ]);
 
+$router->addGet('/test/{var}', [
+	'controller' => 'Index',
+	'action' => 'test'
+]);
+
 $router->handle($_SERVER['REQUEST_URI']);
 
 
