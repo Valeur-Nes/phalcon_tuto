@@ -5,7 +5,7 @@ $router = $di->getRouter();
 // Define your routes here
 
 // Création de la route de la homepage
-$router->addGet('/homepage', [
+$router->addGet('/', [
 	'controller' => 'Index',
 	'action' => 'index'
 ]);
