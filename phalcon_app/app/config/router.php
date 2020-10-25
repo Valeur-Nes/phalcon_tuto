@@ -4,21 +4,12 @@ $router = $di->getRouter();
 
 // Define your routes here
 
-// Homepage
-$router->addGet('/', [
+// Création de la route de la homepage
+$router->addGet('/homepage', [
 	'controller' => 'Index',
 	'action' => 'index'
 ]);
 
-$router->add('/message', [
-	'controller' => 'Index',
-	'action' => 'message'
-]);
-
-$router->addGet('/test/{var}', [
-	'controller' => 'Index',
-	'action' => 'test'
-]);
-
-
 $router->handle($_SERVER['REQUEST_URI']);
+
+
