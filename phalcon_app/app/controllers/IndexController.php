@@ -11,7 +11,7 @@ class IndexController extends Controller
     }
 
     public function showAction(int $var) {
-		$this->view->var = "sfdfsfdssf" . $var;
+		$this->view->var = $var;
     }
 
 }
