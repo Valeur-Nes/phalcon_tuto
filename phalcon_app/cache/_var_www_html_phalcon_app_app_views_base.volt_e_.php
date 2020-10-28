@@ -1,4 +1,4 @@
-<!Doctype html>
+a:9:{i:0;s:649:"<!Doctype html>
 <html lang="en">
 <head>
     <!-- Required meta tags -->
@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
     <!-- Material Design for Bootstrap CSS -->
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
-    
-    <title> Notre Site </title>
+    ";s:5:"style";N;i:1;s:12:"
+    <title>";s:5:"title";N;i:2;s:925:"</title>
 </head>
 <body>
 
@@ -30,34 +30,7 @@
         </nav>
     </header>
 
-    
-
-    <main>
-
-        <div class="container mt-5 pt-5">
-
-            <h1>Bienvenue sur la page principal</h1>
-
-            <h2>Index - IndexController</h2>
-
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci aliquam debitis ducimus eos exercitationem,
-                ipsum minima nostrum nulla officiis perferendis placeat quia, quo tempora, velit! Assumenda odit possimus velit!
-            </p>
-
-            <p>
-                Bonjour : <?= $name ?> <?= $value ?><br><br>
-
-                <?php foreach ($tab as $i) { ?>
-                    <?= $tab[$i] ?>
-                <?php } ?>
-            </p>
-
-        </div>
-
-    </main>
-
-
+    ";s:7:"content";N;i:3;s:763:"
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -65,6 +38,7 @@
 <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
 <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
-
+";s:10:"javascript";N;i:4;s:17:"
 </body>
 </html>
+";}
