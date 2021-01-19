@@ -9,22 +9,22 @@ a:9:{i:0;s:649:"<!Doctype html>
     <!-- Material Design for Bootstrap CSS -->
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
     ";s:5:"style";N;i:1;s:12:"
-    <title>";s:5:"title";N;i:2;s:925:"</title>
+    <title>";s:5:"title";N;i:2;s:950:"</title>
 </head>
 <body>
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">Annonce Post</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-              <a class="nav-item nav-link" href="#">Features</a>
-              <a class="nav-item nav-link" href="#">Pricing</a>
-              <a class="nav-item nav-link disabled" href="#">Disabled</a>
+            <div class="navbar-nav ml-auto">
+              <a class="nav-item nav-link active" href="#">Accueil <span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link" href="#">Nos annonces</a>
+              <a class="nav-item nav-link" href="#">Se connecter</a>
+              <a class="nav-item nav-link" href="#">Créer un compte</a>
             </div>
           </div>
         </nav>

@@ -9,22 +9,22 @@
     <!-- Material Design for Bootstrap CSS -->
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
     
-    <title> Notre Site </title>
+    <title> Notre site </title>
 </head>
 <body>
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">Annonce Post</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-              <a class="nav-item nav-link" href="#">Features</a>
-              <a class="nav-item nav-link" href="#">Pricing</a>
-              <a class="nav-item nav-link disabled" href="#">Disabled</a>
+            <div class="navbar-nav ml-auto">
+              <a class="nav-item nav-link active" href="#">Accueil <span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link" href="#">Nos annonces</a>
+              <a class="nav-item nav-link" href="#">Se connecter</a>
+              <a class="nav-item nav-link" href="#">Créer un compte</a>
             </div>
           </div>
         </nav>
@@ -36,22 +36,16 @@
 
         <div class="container mt-5 pt-5">
 
-            <h1>Bienvenue sur la page principal</h1>
+            <h1>Bienvenue sur la page principale</h1>
 
-            <h2>Index - IndexController</h2>
-
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci aliquam debitis ducimus eos exercitationem,
-                ipsum minima nostrum nulla officiis perferendis placeat quia, quo tempora, velit! Assumenda odit possimus velit!
-            </p>
+            <h1>Index - IndexController</h1>
 
             <p>
-                Bonjour : <?= $name ?> <?= $value ?><br><br>
-
-                <?php foreach ($tab as $i) { ?>
-                    <?= $tab[$i] ?>
-                <?php } ?>
+            	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequuntur deserunt doloremque ducimus eaque illum in labore
+            	maiores, neque nostrum, optio provident quisquam reiciendis reprehenderit repudiandae sit suscipit unde veniam.
             </p>
+
+            <h2>Bonjour <?= $name ?>  <?= $var ?></h2>
 
         </div>
 

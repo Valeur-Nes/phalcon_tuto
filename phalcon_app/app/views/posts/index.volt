@@ -1,19 +1,23 @@
 {% extends 'base.volt' %}
 
-{% block title %} Notre Site | Post {% endblock %}
+{% block title %} Posts {% endblock %}
 
 {% block content %}
 
     <main>
 
-        <h1>Bienvenue sur la page Index</h1>
+        <div class="container mt-5 pt-5">
 
-        <h2>Index - PostsController</h2>
+            <h1>Bienvenue sur la page Index</h1>
 
-        <p>
-        	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci aliquam debitis ducimus eos exercitationem,
-        	ipsum minima nostrum nulla officiis perferendis placeat quia, quo tempora, velit! Assumenda odit possimus velit!
-        </p>
+            <h1>Index - PostsController</h1>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequuntur deserunt doloremque ducimus eaque illum in labore
+                maiores, neque nostrum, optio provident quisquam reiciendis reprehenderit repudiandae sit suscipit unde veniam.
+            </p>
+
+        </div>
 
     </main>
 

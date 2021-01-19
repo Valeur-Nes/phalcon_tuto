@@ -8,19 +8,14 @@ class IndexController extends Controller
 {
 
     public function indexAction() {
-		$this->view->name = "Martin";
-		$this->view->tab = [
-			1 => "1",
-			2 => "2",
-			3 => "3",
-			4 => "4",
-		 	5 => "5"
-		];
+		$this->view->name = "John Doe";
     }
 
-    public function showAction() {
-	    $request = new Request();
-		$this->view->var = $request->get('var');
+    public function showAction(string $string) {
+    	$request = new Request();
+	    $this->view->data = "Je test l'affichage";
+	    //$this->view->var = $request->get('var');
+	    $this->view->var = $string;
     }
 
 }

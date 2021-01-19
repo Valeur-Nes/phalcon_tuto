@@ -9,7 +9,7 @@ $router->addGet('/', [
 	'action' => 'index'
 ]);
 
-$router->addGet('/show', [
+$router->addGet('/show/{string}', [
 	'controller' => 'Index',
 	'action' => 'show'
 ]);
@@ -23,7 +23,6 @@ $router->addGet('/posts/{string}', [
 	'controller' => 'Posts',
 	'action' => 'show'
 ]);
-
 
 $router->handle($_SERVER['REQUEST_URI']);
 

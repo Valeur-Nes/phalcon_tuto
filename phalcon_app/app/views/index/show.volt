@@ -1,26 +1,26 @@
 {% extends 'base.volt' %}
 
-{% block title %} Notre Site | Show index {% endblock %}
+{% block title %} Show Index {% endblock %}
 
 {% block content %}
 
     <main>
 
-        <h1>Bienvenue sur la page Show</h1>
+        <div class="container mt-5 pt-5">
 
-        <h2>Show - IndexController</h2>
+            <h1>Bienvenue sur la page Show</h1>
 
-        <p>
-        	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci aliquam debitis ducimus eos exercitationem,
-        	ipsum minima nostrum nulla officiis perferendis placeat quia, quo tempora, velit! Assumenda odit possimus velit!
-        </p>
+            <h1>Show - IndexController</h1>
 
-        <p>
-            Donnée de l'url : {{ var }}
-        </p>
+            <p>
+            	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequuntur deserunt doloremque ducimus eaque illum in labore
+            	maiores, neque nostrum, optio provident quisquam reiciendis reprehenderit repudiandae sit suscipit unde veniam.
+            </p>
+
+            <h2>{{ data }}  {{ var }}</h2>
+
+        </div>
 
     </main>
 
 {% endblock %}
-
-
