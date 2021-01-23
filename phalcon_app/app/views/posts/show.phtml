@@ -1,23 +1,32 @@
-<?php $this->partial('base', ['title' => 'Annonce Post | Post Show']); ?>
+<?php $this->partial('base', ['title' => $id . ' | Annonce Post']); ?>
 
 <main>
 
-    <div class="container mt-5 pt-5">
+    <div class="container mt-3 pt-5">
+        <div class="row">
+            <div class="col-md-8 px-0 mb-3">
+                <img src="/img/item.jpg" alt="image item <?php echo $id; ?>" width="100%" height="auto" class="border border-secondary">
+                <h2 class="h1 font-weight-bold mt-3">Item <?php echo $id; ?></h2>
+                <h4 class="h3 font-weight-bold text-info">50€</h4>
+                <p>23/01/2021 à 15:00</p>
+                <hr>
+                <h6 class="h6">Description</h6>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto aspernatur assumenda esse laboriosam
+                    libero, molestias nobis, numquam officiis praesentium quam quas quidem quo quod repellendus sapiente sint unde vel.
+                </p>
+            </div>
 
-        <h1>Bienvenue sur la page Show</h1>
-
-        <h1>Show - PostsController</h1>
-
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequuntur deserunt doloremque ducimus eaque illum in labore
-            maiores, neque nostrum, optio provident quisquam reiciendis reprehenderit repudiandae sit suscipit unde veniam.
-        </p>
-
-        <h2><?php echo $var; ?></h2>
-
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h6>Annonceur</h6>
+                        <p>Jane Doe</p>
+                        <button class="btn btn-raised btn-primary w-100">Contacter</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </main>
-
-
-

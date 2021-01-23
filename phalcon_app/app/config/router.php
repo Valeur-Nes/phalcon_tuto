@@ -4,31 +4,21 @@ $router = $di->getRouter();
 
 // Define your routes here
 $router->addGet('/', [
-	'controller' => 'Index',
-	'action' => 'index'
-]);
-
-$router->addGet('/show/{var}', [
-	'controller' => 'Index',
-	'action' => 'show'
-]);
-
-$router->addGet('/', [
-	'controller' => 'Index',
-	'action' => 'index'
-]);
-
-$router->addGet('/show/{string}', [
-	'controller' => 'Index',
-	'action' => 'show'
-]);
-
-$router->addGet('/posts', [
 	'controller' => 'Posts',
 	'action' => 'index'
 ]);
 
-$router->addGet('/posts/{string}', [
+$router->addGet('/inscription', [
+	'controller' => 'Registration',
+	'action' => 'registration'
+]);
+
+$router->addGet('/connexion', [
+	'controller' => 'Login',
+	'action' => 'login'
+]);
+
+$router->addGet('/show/{id}', [
 	'controller' => 'Posts',
 	'action' => 'show'
 ]);

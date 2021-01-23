@@ -6,11 +6,11 @@ class PostsController extends \Phalcon\Mvc\Controller
 
     public function indexAction()
     {
-
+		// TODO
     }
 
-    public function showAction(string $string) {
-	    $this->view->var = $string;
+    public function showAction(string $id) {
+	    $this->view->id = $id;
     }
 
 }

@@ -1,24 +1,32 @@
-{% extends 'base.volt' %}
+<?php $this->partial('base', ['title' => 'Annonce Post']); ?>
 
-{% block title %} Posts {% endblock %}
+<main>
 
-{% block content %}
+    <div class="banner-homepage py-1">
+        <h1 class="display-1 font-weight-bold text-center text-white">Annonce Post</h1>
+    </div>
 
-    <main>
+    <div class="container mt-5 py-5">
+        <h1 class="text-center pb-3">Les annonces : </h1>
 
-        <div class="container mt-5 pt-5">
+        <div class="col-12 px-0 mt-3">
+            <div class="row">
 
-            <h1>Bienvenue sur la page Index</h1>
-
-            <h1>Index - PostsController</h1>
-
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequuntur deserunt doloremque ducimus eaque illum in labore
-                maiores, neque nostrum, optio provident quisquam reiciendis reprehenderit repudiandae sit suscipit unde veniam.
-            </p>
-
+				<?php for($i=0; $i<9; $i++) : ?>
+                    <div class="card mx-auto mb-5" style="width: 22rem;">
+                        <img class="card-img-top" src="/img/item.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Item <?php echo $i+1; ?></h5>
+                            <h6 class="card-subtitle mb-2 text-muted">50 €</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div class="card-body">
+                            <a href="/show/<?php echo $i; ?>" class="card-link">Voir l'annonce</a>
+                        </div>
+                    </div>
+				<?php endfor;?>
+            </div>
         </div>
+    </div>
 
-    </main>
-
-{% endblock %}
+</main>
