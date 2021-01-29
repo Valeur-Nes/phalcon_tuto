@@ -1,8 +1,0 @@
-{
-    "name": "phalcon/app",
-    "description": "Tutoriel créer un site avec Phalcon",
-    "require": {},
-    "require-dev": {
-        "phalcon/devtools": "^4.0"
-    }
-}
