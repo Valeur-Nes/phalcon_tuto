@@ -4,7 +4,7 @@ $router = $di->getRouter();
 
 // Define your routes here
 $router->addGet('/', [
-	'controller' => 'Posts',
+	'controller' => 'Post',
 	'action' => 'index'
 ]);
 

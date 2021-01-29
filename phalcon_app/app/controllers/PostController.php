@@ -7,7 +7,7 @@ use Phalcon\Mvc\Model\Criteria;
 use Phalcon\Paginator\Adapter\Model;
 
 
-class PostController extends ControllerBase
+class PostController extends \Phalcon\Mvc\Controller
 {
     /**
      * Index action

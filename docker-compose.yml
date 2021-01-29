@@ -19,8 +19,10 @@ services:
         container_name: mysql
         image: mysql:8
         environment:
+            HOST: mysql
             MYSQL_DATABASE: phalcon_app
             MYSQL_USER: root
+            MYSQL_ROOT_PASSWORD: root
             MYSQL_USER_PASSWORD: root
         ports:
             - '3306:3306'
