@@ -24,4 +24,9 @@ $router->addGet('/show/{var}', [
 	'action' => 'show'
 ]);
 
+$router->addGet('/new', [
+	'controller' => 'User',
+	'action' => 'new'
+]);
+
 $router->handle($_SERVER['REQUEST_URI']);
