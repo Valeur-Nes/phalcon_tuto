@@ -8,13 +8,22 @@ class IndexController extends ControllerBase
 
     public function indexAction()
     {
-		$this->view->name = "Martin";
-	    $this->view->test = "Valentine";
+	    $this->view->setVars([
+	    	'name' => 'Martin',
+		    'tab' => [
+		    	1 => '1',
+			    2 => '2',
+			    3 => '3',
+			    4 => '4',
+			    5 => '5'
+		    ]
+	    ]);
     }
 
-    public function showAction(string $var)
+    public function showAction()
     {
-		$this->view->var = $var;
+    	$request = new Request();
+		$this->view->var = $request->get('var');
     }
 
     public function editAction()  {
@@ -26,4 +35,3 @@ class IndexController extends ControllerBase
     }
 
 }
-
