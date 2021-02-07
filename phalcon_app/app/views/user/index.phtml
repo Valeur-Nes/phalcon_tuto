@@ -1,0 +1,17 @@
+<h1 class="display-4 mb-5">Nos utilisateurs</h1>
+
+<hr class="hr">
+
+<div class="mt-5 row">
+	<?php foreach ($users as $user): ?>
+        <div class="col-md-4 mx-auto mb-3">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="/img/profil.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text"><?php echo $user->getFirstname() . " " . $user->getLastname(); ?></p>
+                    <a href="/utilisateur/<?php echo $user->getId(); ?>" class="btn btn-secondary">Voir plus</a>
+                </div>
+            </div>
+        </div>
+	<?php endforeach; ?>
+</div>

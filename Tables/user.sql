@@ -7,7 +7,7 @@ CREATE TABLE user (
     email varchar(150) NOT NULL,
     password varchar(255) NOT NULL,
     PRIMARY KEY (id)
-)
+);
 
 INSERT INTO user VALUES
 (1, 'Rébecca', 'Armand', 'armand@mail.com', '$2y$10$iz0Kzb7IWpJEylyX5dDp2eH6XNVLTCBhhKfAOq8pIR65Rk0XJC63K'),

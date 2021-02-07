@@ -1,0 +1,17 @@
+<h1 class="display-4 mb-5">Détail Utilisateur</h1>
+
+<hr class="hr">
+
+<div class="card mt-5">
+    <div class="card-body">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Nom : <?php echo $user->getFirstname(); ?></li>
+            <li class="list-group-item">Prénom : <?php echo $user->getLastname(); ?></li>
+            <li class="list-group-item">Email : <?php echo $user->getEmail(); ?></li>
+        </ul>
+    </div>
+</div>
+
+<div class="mt-5">
+    <a href="/utilisateur" class="btn btn-secondary">Retour à la liste des utilisateur</a>
+</div>
