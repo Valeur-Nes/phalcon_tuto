@@ -1,0 +1,15 @@
+<h1 class="display-4 mb-5">Post : <?php echo $post->getTitle(); ?></h1>
+
+<hr class="hr">
+
+<div class="my-5">
+	<p><?php echo $post->getContent(); ?></p>
+</div>
+
+<div class="mt-5">
+	Posté par : <?php echo $user->getFirstname() . " " . $user->getLastname(); ?>
+</div>
+
+<div class="mt-5">
+	<a href="/" class="btn btn-secondary">Retour à la liste des sujets</a>
+</div>

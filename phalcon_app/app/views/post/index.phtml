@@ -1,0 +1,19 @@
+<h1 class="display-4 mb-5">Nos sujets</h1>
+
+<hr class="hr">
+
+<div class="mt-5 row">
+	<?php foreach ($posts as $post): ?>
+		<div class="col-md-4 mx-auto mb-3">
+			<div class="card" style="width: 18rem;">
+				<div class="card-body">
+					<h5 class="card-title"><?php echo $post->getTitle(); ?></h5>
+					<p class="card-text truncate"><?php echo $post->getContent(); ?></p>
+					<a href="/post/<?php echo $post->getId(); ?>" class="btn btn-secondary">Voir plus</a>
+                    <a href="/modifier_un_post/<?php echo $post->getId(); ?>" class="btn btn-primary">Modifier</a>
+                    <a href="/supprimer_un_post/<?php echo $post->getId(); ?>" class="btn btn-danger mt-3">Supprimer</a>
+				</div>
+			</div>
+		</div>
+	<?php endforeach; ?>
+</div>

@@ -2,28 +2,6 @@
 
 $router = $di->getRouter();
 
-// Define your routes here
-
-$router->addGet('/', [
-	'controller' => 'Index',
-	'action' => 'index'
-]);
-
-$router->addGet('/new', [
-	'controller' => 'Index',
-	'action' => 'new'
-]);
-
-$router->addGet('/edit', [
-	'controller' => 'Index',
-	'action' => 'edit'
-]);
-
-$router->addGet('/show/{var}', [
-	'controller' => 'Index',
-	'action' => 'show'
-]);
-
 // Routes User
 
 $router->addGet('/utilisateur', [
@@ -60,5 +38,43 @@ $router->addGet('/supprimer_utilisateur/{id}', [
 	'controller' => 'User',
 	'action' => 'delete'
 ]);
+
+// Route Post
+
+$router->addGet('/', [
+	'controller' => 'Post',
+	'action' => 'index'
+]);
+
+$router->addGet('/post/{id}', [
+	'controller' => 'Post',
+	'action' => 'show'
+]);
+
+$router->addGet('/creer_un_post', [
+	'controller' => 'Post',
+	'action' => 'new'
+]);
+
+$router->addPost('/save_creer_un_post', [
+	'controller' => 'Post',
+	'action' => 'create'
+]);
+
+$router->addGet('/modifier_un_post/{id}', [
+	'controller' => 'Post',
+	'action' => 'edit'
+]);
+
+$router->addPost('/save_modifier_un_post', [
+	'controller' => 'Post',
+	'action' => 'save'
+]);
+
+$router->addGet('/supprimer_un_post/{id}', [
+	'controller' => 'Post',
+	'action' => 'delete'
+]);
+
 
 $router->handle($_SERVER['REQUEST_URI']);
