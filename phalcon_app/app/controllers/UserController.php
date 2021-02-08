@@ -195,7 +195,21 @@ class UserController extends \Phalcon\Mvc\Controller
 		    $email = $this->request->getPost('email');
 		    $password = $this->request->getPost('password');
 		    $user = User::findFirst(["(email = :email:) AND password = :password:", 'bind' => ['email' => $email, 'password' => $this->security->hash($password)]]);
-	    }
+        
+            if ($user !== false) {
+                $this->_registerSession($user);
+                $this->flash->success(
+                    'Welcome ' . $user->name
+                );
+                // rediriger vers la page d'accueil après connexion réussie
+                return $this->dispatcher->forward(
+                    [
+                        'controller' => 'user',
+                        'action'     => 'board',
+                    ]
+                );
+            }
+        }
     }
 
     public function boardAction() {

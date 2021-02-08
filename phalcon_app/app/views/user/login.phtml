@@ -12,7 +12,7 @@
 
 <?php echo $this->getContent(); ?>
 
-<form action="/login" class="form-horizontal" method="post">
+<form action="/user/login" class="form-horizontal" method="post">
 	<div class="form-group">
 		<label for="fieldEmail" class="control-label">Adresse email</label>
 		<?php echo $this->tag->textField(["email", "size" => 30, "class" => "form-control", "id" => "fieldEmail", "placeholder" => "Adresse email"]) ?>
