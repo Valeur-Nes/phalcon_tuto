@@ -39,6 +39,21 @@ $router->addGet('/supprimer_utilisateur/{id}', [
 	'action' => 'delete'
 ]);
 
+$router->addGet('/connexion', [
+	'controller' => 'User',
+	'action' => 'login'
+]);
+
+$router->addPost('/signin', [
+	'controller' => 'User',
+	'action' => 'signIn'
+]);
+
+$router->addGet('/mon_compte', [
+	'controller' => 'User',
+	'action' => 'board'
+]);
+
 // Route Post
 
 $router->addGet('/', [
@@ -75,6 +90,5 @@ $router->addGet('/supprimer_un_post/{id}', [
 	'controller' => 'Post',
 	'action' => 'delete'
 ]);
-
 
 $router->handle($_SERVER['REQUEST_URI']);

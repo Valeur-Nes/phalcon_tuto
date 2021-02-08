@@ -190,5 +190,25 @@ class UserController extends \Phalcon\Mvc\Controller
 
     }
 
+    public function loginAction() {
+	    if ($this->request->isPost()) {
+		    $email = $this->request->getPost('email');
+		    $password = $this->request->getPost('password');
+		    $user = User::findFirst(["(email = :email:) AND password = :password:", 'bind' => ['email' => $email, 'password' => $this->security->hash($password)]]);
+	    }
+    }
+
+    public function boardAction() {
+
+    }
+
+    public function _registerSession($user) {
+    	$this->session->set('auth', [
+    		'id' => $user->id,
+		    'firstname' => $user->firstname,
+		    'lastname' => $user->lastname
+	    ]);
+    }
+
 }
 
